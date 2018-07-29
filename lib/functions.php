@@ -11,6 +11,10 @@ function getContent(){
 		include __DIR__.'/../pages/home.php';
 	} else {
 		// le reste du code
+		$bio = file_get_contents('/../pages/bio.php');
+		$contact = file_get_contents('/../pages/contact.php');
+		echo $bio;
+		echo $contact;
 	}
 }
 
